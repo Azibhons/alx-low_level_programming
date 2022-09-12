@@ -2,24 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main -Entry point
+ * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int d;
+	char low;
 
-	for (d = 0; d < 100; d++)
-	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-		if (d != 99)
-		{
-			putchar(',');
-		}
-	}
-	putchar('\n');
-
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+	printf("\n");
 	return (0);
 }
