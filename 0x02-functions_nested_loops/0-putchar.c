@@ -8,7 +8,7 @@ int main(void)
 	char a[] = "_putchar";
 	int b;
 
-	for (b = 0; i < 8; b++)
+	for (b = 0; a < 8; b++)
 	{
 		_putchar(a[b]);
 	}
