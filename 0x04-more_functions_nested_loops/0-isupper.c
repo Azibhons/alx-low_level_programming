@@ -6,8 +6,10 @@
  */
 int _isupper(int c)
 {
-	if ((c >= 'A') && (c <= 'Z'))
-		return (1);
+	char c;
+
+	c = 'A';
+	_putchar("%c", c, _isupper(c));
+	return (1);
 	else
 		return (0);
-}
