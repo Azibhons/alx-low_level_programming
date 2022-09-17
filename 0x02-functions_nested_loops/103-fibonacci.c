@@ -5,21 +5,17 @@
  */
 int main(void)
 {
-	unsigned long count, i, j, k, sums;
+	int i = 0, j = 1, azi = 0;
+	int sum = 0;
 
-	i = sums = 0;
-	j = 1;
-	for (count = 0; count < 50; count++)
+	while (azi < 4000000)
 	{
-		k = i + j;
+		azi = i + j;
 		i = j;
-		if (k % 2 == 0 && k <= 4000000)
-		{
-			sums += k;
-		}
+		j = azi;
+		if (azi % 2 == 0)
+			sum += azi;
 	}
-	printf("%lu\n", sums);
+	printf("%i\n", sum);
 	return (0);
 }
-
-
