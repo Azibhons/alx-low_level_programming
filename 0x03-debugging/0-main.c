@@ -9,7 +9,6 @@ int main(void)
 
 	i = 0;
 	positive_or_negative(i);
-	printf("%d is positive or  negative\n", i);  
 
 	return (0);
 }
