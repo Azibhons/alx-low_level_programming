@@ -1,6 +1,6 @@
 #include "main.h"
 
-int_sqrt(int, int);
+int _sqrt(int, int);
 
 /**
  * _sqrt_recursion -> sqrt using recursion
