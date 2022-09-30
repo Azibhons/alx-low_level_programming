@@ -1,53 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include "main.h"
 
 /**
- * check_digit - checks if a given char is number or not
- * @a: input char
- * Return: int
- */
-int check_digit(char *a)
-{
-	int i, num, len;
-
-	i = 0;
-	num = 0;
-	len = strlen(a);
-	while (i < len)
-	{
-		if (a[i] < '0' || a[i] > '9')
-		{
-			return (-1);
-		}
-			num = num * 10 + (a[i] - '0');
-		else
-		i++;
-	}
-	return (num);
-}
-
-/**
- * main -  program that adds positive numbers
- * @argc: arguement count
- * @argv: argument vector
- * Return: int
+ * main - Entry Point
+ * @argc: arguments
+ * @argv: array pointing to arguments
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int i, num, res;
+	int i, sum = 0;
 
-	res = 0;
+	if (argc < 1)
+		return (0);
+
 	for (i = 1; i < argc; i++)
 	{
-		num = check_digit(argv[i]);
-		if (num == -1)
+		if (!atoi(argv[i]))
 		{
-			printf("Error\n");
+			printf("%s\n", "Error");
 			return (1);
 		}
-		res += num;
+		sum += atoi(argv[i]);
 	}
-	printf("%d\n", res);
+	printf("%d\n", sum);
+
 	return (0);
 }
