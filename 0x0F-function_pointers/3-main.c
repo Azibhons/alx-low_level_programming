@@ -9,10 +9,11 @@
  *
  * Return: Always 0.
  */
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
+	int (*func)(int, int); 
 
 	if (argc != 4)
 	{
