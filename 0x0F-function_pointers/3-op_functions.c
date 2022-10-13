@@ -23,7 +23,7 @@ int op_add(int a, int b)
  * @a: The first number.
  * @b: The second number.
  *
- * Return: The difference of a and b.
+ * Return: the difference of a and b.
  */
 int op_sub(int a, int b)
 {
