@@ -1,7 +1,4 @@
 #include "lists.h"
-#include <stblib>
-#include <string.h>
-#include <stdio.h>
 
 /**
  * get_nodeint_at_index - Locates a given node of
