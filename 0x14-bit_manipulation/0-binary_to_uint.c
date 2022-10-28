@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
   * binary_to_uint - vonverts a binary number to an unsigned int
