@@ -65,4 +65,5 @@ int binary_search(int *array, size_t size, int value)
 	if (array && size)
 		return (rec_search(array, 0, (int)size - 1, value));
 	return (-1);
+	printf("\n");
 }
