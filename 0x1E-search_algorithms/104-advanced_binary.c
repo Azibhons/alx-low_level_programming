@@ -65,3 +65,4 @@ int advanced_binary(int *array, size_t size, int value)
 
 	return (binary_search_recursion(array, value, low, high));
 }
+
